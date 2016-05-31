@@ -1,4 +1,5 @@
 # Files and directories created by pub
+.atom
 .packages
 .pub/
 build/
@@ -13,7 +14,7 @@ pubspec.lock
 *.info.json
 
 # Directory created by dartdoc
-doc/api/
+# doc/api/
 
 # JetBrains IDEs
 .idea/

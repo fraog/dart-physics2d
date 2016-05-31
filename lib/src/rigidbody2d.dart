@@ -1,5 +1,6 @@
 import 'package:physics2d/physics2d.dart';
 
+/// A 2d rigid body. 
 class RigidBody2D extends Rect2D {
 
   Vector2D velocity;
@@ -7,17 +8,19 @@ class RigidBody2D extends Rect2D {
   //These are both in radians.
   double rotation = 0.0;
   double angularVelocity = 0.0;
-  num maxr = 0;
+  //num maxr = 0;
   double mass = 1.0;
+  double momentOfInertia = 0.0;
 
-  //TEMP:
-  Vector2D impactPoint = null;
-  Vector2D impactPoint2 = null;
-  List<Vector2D> overlaps = null;
+  Vector2D corner = null;
+  int bufferCount = 0;
 
   RigidBody2D(double x, double y, num w, num h) : super(x, y, w, h) {
     this.velocity = new Vector2D(0.0, 0.0);
-    this.maxr = (w > h) ? w/2 : h/2;
+    //this.maxr = (w > h) ? w/2 : h/2;
+    this.mass = 1.0;
+    this.momentOfInertia = this.mass*(w*w + h*h)/12;
+    this.corner = new Vector2D(w/2, h/2);
   }
 
   List<Vector2D> get normalizedAxes {
@@ -49,4 +52,21 @@ class RigidBody2D extends Rect2D {
     return points;
   }
 
+  List<Edge2D> getAbsoluteEdges(List<Vector2D> points) {
+    if (points == null) points = this.getAbsoluteCorners(null);
+    List<Edge2D> edges = new List<Edge2D>(4);
+    edges[0] = new Edge2D(points[0], points[1]); //TOP -TL TO TR
+    edges[1] = new Edge2D(points[2], points[3]); //BOT - BL TO BR
+    edges[2] = new Edge2D(points[0], points[2]); //LEFT - TL TO BL
+    edges[3] = new Edge2D(points[1], points[3]); //RIGHT - TR TO BR
+    return edges;
+  }
+
+  void applyImpulse(Vector2D force) {
+    this.velocity = this.velocity + force/this.mass;
+  }
+
+  //TODO: this changes the rotational velocity as well?
+  // var wa2 = wa1 + (rap.crossProduct(jn)/Ia)/3.0;
+  // or is that impulse at point only?
 }

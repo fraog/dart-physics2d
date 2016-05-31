@@ -4,6 +4,4 @@
 import 'package:physics2d/physics2d.dart';
 
 main() {
-  var awesome = new Awesome();
-  print('awesome: ${awesome.isAwesome}');
 }

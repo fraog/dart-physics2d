@@ -1,5 +1,6 @@
 import 'dart:math';
 
+/// A basic 2d vector implementation.
 class Vector2D {
 
   double x;

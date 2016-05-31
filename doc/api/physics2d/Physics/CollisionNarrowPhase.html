@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the CollisionNarrowPhase method from the Physics class, for the Dart programming language.">
+  <title>CollisionNarrowPhase method - Physics class - physics2d library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Code+Pro|Roboto:500,400italic,300,400' type='text/css'>
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+  <!-- Do not remove placeholder -->
+  <!-- Header Placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header class="container-fluid" id="title">
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 contents">
+          <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+          <ol class="breadcrumbs gt-separated hidden-xs">
+            <li><a href="index.html">physics2d</a></li>
+            <li><a href="physics2d/physics2d-library.html">physics2d</a></li>
+            <li><a href="physics2d/Physics-class.html">Physics</a></li>
+            <li class="self-crumb">CollisionNarrowPhase</li>
+          </ol>
+          <div class="self-name">CollisionNarrowPhase</div>
+          <form class="search navbar-right" role="search">
+            <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+          </form>
+        </div> <!-- /col -->
+      </div> <!-- /row -->
+    </div> <!-- /container -->
+  </nav>
+
+  <div class="container masthead">
+    <div class="row">
+      <div class="col-sm-12 contents">
+        <ol class="breadcrumbs gt-separated visible-xs">
+          <li><a href="index.html">physics2d</a></li>
+          <li><a href="physics2d/physics2d-library.html">physics2d</a></li>
+          <li><a href="physics2d/Physics-class.html">Physics</a></li>
+          <li class="self-crumb">CollisionNarrowPhase</li>
+        </ol>
+        <div class="title-description">
+          <h1 class="title">
+            <span class="kind">method</span> CollisionNarrowPhase
+          </h1>
+        </div>
+        <ul class="subnav">
+          <li><a href="physics2d/Physics/CollisionNarrowPhase.html#source">Source</a></li>
+        </ul>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  </div> <!-- /container -->
+
+</header>
+
+<div class="container body">
+  <div class="row">
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5><a href="index.html">physics2d</a></h5>
+    <h5><a href="physics2d/physics2d-library.html">physics2d</a></h5>
+    <h5><a href="physics2d/Physics-class.html">Physics</a></h5>
+
+    <ol>
+    
+      <li class="section-title"><a href="physics2d/Physics-class.html#static-properties">Static properties</a></li>
+      <li><a href="physics2d/Physics/Cache.html">Cache</a></li>
+      <li><a href="physics2d/Physics/disabled.html">disabled</a></li>
+      <li><a href="physics2d/Physics/Elasticity.html">Elasticity</a></li>
+      <li><a href="physics2d/Physics/PAUSED.html">PAUSED</a></li>
+      <li><a href="physics2d/Physics/resolved.html">resolved</a></li>
+      <li><a href="physics2d/Physics/timer.html">timer</a></li>
+      <li><a href="physics2d/Physics/TimeScale.html">TimeScale</a></li>
+      <li><a href="physics2d/Physics/updateInterval.html">updateInterval</a></li>
+    
+      <li class="section-title"><a href="physics2d/Physics-class.html#static-methods">Static methods</a></li>
+      <li><a href="physics2d/Physics/CollisionBroadPhase.html">CollisionBroadPhase</a></li>
+      <li><a href="physics2d/Physics/CollisionNarrowPhase.html">CollisionNarrowPhase</a></li>
+      <li><a href="physics2d/Physics/ProjectVertices.html">ProjectVertices</a></li>
+      <li><a href="physics2d/Physics/ResolveCollisions.html">ResolveCollisions</a></li>
+      <li><a href="physics2d/Physics/start.html">start</a></li>
+      <li><a href="physics2d/Physics/update.html">update</a></li>
+    
+      <li class="section-title"><a href="physics2d/Physics-class.html#constructors">Constructors</a></li>
+      <li><a href="physics2d/Physics/Physics.html">Physics</a></li>
+    
+      <li class="section-title inherited">
+        <a href="physics2d/Physics-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="physics2d/Physics/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="physics2d/Physics/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="physics2d/Physics-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="physics2d/Physics/operator_equals.html">operator ==</a></li>
+    
+      <li class="section-title inherited"><a href="physics2d/Physics-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="physics2d/Physics/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="physics2d/Physics/toString.html">toString</a></li>
+    </ol>
+
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="physics2d/Collision2D-class.html">Collision2D</a></span>
+      <span class="name ">CollisionNarrowPhase</span>(<wbr><span class="parameter" id="CollisionNarrowPhase-param-body"><span class="type-annotation"><a href="physics2d/RigidBody2D-class.html">RigidBody2D</a></span> <span class="parameter-name">body</span></span>, <span class="parameter" id="CollisionNarrowPhase-param-other"><span class="type-annotation"><a href="physics2d/RigidBody2D-class.html">RigidBody2D</a></span> <span class="parameter-name">other</span></span>)
+    </section>
+    <section class="desc markdown">
+      <p>Uses SAT (Separating Axis Theorem) to determine if two objects are colliding.
+If they are, an impact point and impact normal are generated and returned as a
+Collision2D object. Otherwise returns null.</p>
+<p>Separating Axis Theorem: Given two convex shapes, if we can find an axis in
+which the projection of the two shapes does not overlap, then the shapes dont overlap. (all axes of the shapes must overlap for collision).</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre><code class="prettyprint lang-dart">static Collision2D CollisionNarrowPhase(RigidBody2D body, RigidBody2D other) {
+
+    //List&lt;Vector2D&gt; axes = body.normalizedAxes;
+    //List&lt;Vector2D&gt; axes2 = other.normalizedAxes;
+
+    //TEMP: Relative axes
+    List&lt;Vector2D&gt; axes = [ new Vector2D(1.0, 0.0), new Vector2D(0.0, 1.0) ];
+    List&lt;Vector2D&gt; axes2 = [ new Vector2D(1.0, 0.0), new Vector2D(0.0, 1.0) ];
+
+    double rdiff = other.rotation-body.rotation;
+
+    //double rdiff = -body.rotation;
+    axes2[0].rotateBy(rdiff);
+    axes2[1].rotateBy(rdiff);
+
+    /* Get the points of body and other using their axes. */
+    //List&lt;Vector2D&gt; points1 = body.getAbsoluteCorners(axes);
+    //List&lt;Vector2D&gt; points2 = other.getAbsoluteCorners(axes2);
+
+    //TEMP: Relative points
+    List&lt;Vector2D&gt; points1 = body.getRelativeCorners(axes);
+    List&lt;Vector2D&gt; points2 = other.getRelativeCorners(axes2);
+
+    Vector2D diff = other - body;
+    diff.rotateBy(-body.rotation);
+    for (Vector2D p in points2) {
+      p.add(diff);
+    }
+
+
+    /*
+     * For each axis on body and other, project points from both body and other and check for overlap of
+     * their minimum and maximum.
+     */
+    axes.addAll(axes2);
+
+    //These are the projection min/max of the shape
+    List&lt;double&gt; range1 = [ 0.0, 0.0 ];
+    List&lt;double&gt; range2 = [ 0.0, 0.0 ];
+
+    //Min overlap and axis on other&apos;s proejctions.
+    double overlap = -1.0;
+    Vector2D minOverlap = null;
+
+    for (Vector2D axis in axes) {
+
+      //Get the min and max of all the dot products of axis and each point.
+      Physics.ProjectVertices(axis, points1, range1);
+      Physics.ProjectVertices(axis, points2, range2);
+
+      //Check if they overlap
+      if (range1[1] &lt; range2[0] || range1[0] &gt; range2[1]) {
+        return null;
+      } else {
+        //Get the overlap for 4 cases - left hanging, right hanging, containment, contained
+        num o = 0;
+        if (range1[0] &lt; range2[0] &amp;&amp; range1[1] &gt; range2[0]) {
+          o = range1[1]-range2[0];
+        } else if (range2[0] &lt; range1[0] &amp;&amp; range2[1] &gt; range1[0]) {
+          o = range2[1]-range1[0];
+        } else {
+          //TODO: containment cases, how to resolve.
+          throw new Exception(&quot;Error: Overlap containment case not handled.&quot;);
+        }
+
+        //Update OTHER min overlap/axis.
+        if (overlap &lt; 0 || o &lt; overlap) {
+          overlap = o;
+          minOverlap = axis * overlap;
+        }
+      }
+    }
+
+    //If we got here, we have a collision, so we&apos;ll need a collision object.
+    Collision2D c = new Collision2D(null, null);
+
+    //The impact normal is actually represented by the axis with the min overlap.
+    c.impactNormal = minOverlap;
+
+
+    //Now, we need to determine the impact point and MTV (minimal translation vector).
+    List&lt;Edge2D&gt; edges1 = body.getAbsoluteEdges(points1);
+    List&lt;Edge2D&gt; edges2 = other.getAbsoluteEdges(points2);
+
+    //Find intersections on a and b.
+    //If I just use indices i know which edge by (1, 2, 3, 4) - top, bot, left, right
+    //FIXME: bad
+    List&lt;int&gt; inters = new List&lt;int&gt;(4);
+    List&lt;int&gt; ointers = new List&lt;int&gt;(4);
+    for (int i=0; i&lt;4; i++) {
+      inters[i] = -1;
+      ointers[i] = -1;
+    }
+
+    int intersLen = 0;
+    //int ointersLen = 0;
+    for (int i=0; i &lt; edges1.length; i++) {
+      for (int o=0; o &lt; edges2.length; o++) {
+        if (edges1[i].intersects(edges2[o])) {
+          if (inters[i] == -1) intersLen++;
+          inters[i] = o;
+          //if (ointers[o] == -1) ointersLen++;
+          ointers[o] = i;
+        }
+      }
+    }
+
+    //Correct the overlap vector based on intersections.
+    //TODO: We could probably combien cases 1 and 2.
+    if (intersLen == 0) {
+      print(&quot;Error: None of my edges are colliding from the start!&quot;);
+      throw new Exception(&quot;Error: None of my edges are colliding from the start!&quot;);
+    } else if (intersLen == 1) {
+      //print(&quot;Error: Only one of my edges is colliding from the start!&quot;);
+      if ((inters[0] &gt;= 0 &amp;&amp; c.impactNormal.y &lt; 0) ||
+          (inters[1] &gt;= 0 &amp;&amp; c.impactNormal.y &gt; 0))  c.impactNormal.y = -c.impactNormal.y;
+      if ((inters[2] &gt;= 0 &amp;&amp; c.impactNormal.x &lt; 0) ||
+          (inters[3] &gt;= 0 &amp;&amp; c.impactNormal.x &gt; 0))  c.impactNormal.x = -c.impactNormal.x;
+
+      //Note: We can&apos;t correct this case initially.
+
+    } else if (intersLen == 2) {
+      //print(&quot;Initially, two of my edges are colliding.&quot;);
+      if ((inters[0] &gt;= 0 &amp;&amp; c.impactNormal.y &lt; 0) ||
+          (inters[1] &gt;= 0 &amp;&amp; c.impactNormal.y &gt; 0))  c.impactNormal.y = -c.impactNormal.y;
+      if ((inters[2] &gt;= 0 &amp;&amp; c.impactNormal.x &lt; 0) ||
+          (inters[3] &gt;= 0 &amp;&amp; c.impactNormal.x &gt; 0))  c.impactNormal.x = -c.impactNormal.x;
+
+      //Exit early if we have non-adjacent inters. (0, 1 or 2, 3)
+      if (intersLen != 2 || !( (inters[0] &gt;= 0 &amp;&amp; inters[1] &gt;= 0)  || (inters[2] &gt;= 0 &amp;&amp; inters[3] &gt;= 0) )) {
+
+        //Correct collision
+        c.impactNormal.multiply(0.99); //TODO: do this when creating the overlap.
+        body.add(c.impactNormal);
+        for (Vector2D p in points1) p.add(c.impactNormal);
+
+        //Update my intersections:
+        for (int i=0; i&lt;4; i++) {
+          if (inters[i] &gt;= 0) {
+            if (!edges1[i].intersects(edges2[inters[i]])) {
+              inters[i] = -1;
+              intersLen--;
+            } else {
+              //make sure ointers wasnt cleared.
+              ointers[inters[i]] = i;
+            }
+          }
+        }
+      }
+    } else if (intersLen == 3) {
+      print(&quot;Error: Three of my edges are colliding from the start!&quot;);
+    }
+
+    //Generate an impact point:
+    if (intersLen == 0) {
+      print(&quot;Error: None of my edges are colliding after correction.&quot;);
+      throw new Exception(&quot;Error: None of my edges are colliding after correction.&quot;);
+    } else if (intersLen == 1) {
+      //print(&quot;The impact point is on the other object&apos;s corner.&quot;);
+      c.impactPoint = new Vector2D(diff.x, diff.y);
+      if (ointers[0] &gt;= 0) c.impactPoint.add((edges2[2].direction/2).inverted);
+      if (ointers[1] &gt;= 0) c.impactPoint.add(edges2[2].direction/2);
+      if (ointers[2] &gt;= 0) c.impactPoint.add((edges2[0].direction/2).inverted);
+      if (ointers[3] &gt;= 0) c.impactPoint.add(edges2[0].direction/2);
+    } else if (intersLen == 2) {
+
+      Edge2D otherEdge = null;
+      double dist = 0.0;
+
+      if (inters[0] &gt;= 0 &amp;&amp; inters[1] &gt;= 0) {
+        otherEdge = edges2[inters[0]];
+        dist = body.hw;
+      } else if (inters[2] &gt;= 0 &amp;&amp; inters[3] &gt;= 0) {
+        otherEdge = edges2[inters[2]];
+        dist = body.hh;
+      }
+
+      if (otherEdge != null) {
+        c.impactPoint = otherEdge.position + (otherEdge.direction/2);
+        c.impactPoint.subtract(other);
+        c.impactPoint.normalize();
+        c.impactNormal = c.impactPoint;
+        c.impactPoint = c.impactPoint.inverted;
+        c.impactPoint.multiply(dist);
+      } else {
+        //print(&quot;The impact point is on one of my corners.&quot;);.
+        c.impactPoint = new Vector2D(0.0, 0.0);
+        if (inters[0] &gt;= 0) c.impactPoint.add((edges1[2].direction/2).inverted);
+        if (inters[1] &gt;= 0) c.impactPoint.add(edges1[2].direction/2);
+        if (inters[2] &gt;= 0) c.impactPoint.add((edges1[0].direction/2).inverted);
+        if (inters[3] &gt;= 0) c.impactPoint.add(edges1[0].direction/2);
+      }
+    } else if (intersLen == 3) {
+      print(&quot;Error: Three of my edges colliding afterwards.&quot;);
+      throw new Exception(&quot;Error: Three of my edges are colliding: &quot;+ointers.toString());
+    }
+
+    /* If they were all overlapping, they must be colliding. */
+    return c;
+  }</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+</div> <!-- row -->
+</div> <!-- container -->
+
+<footer>
+  <div class="container-fluid">
+    <div class="container">
+      <p class="text-center">
+        <span class="no-break">
+          physics2d 0.0.1
+        </span>
+        &bull;
+        <span class="no-break">
+          <a href="https://www.dartlang.org">
+            <img src="static-assets/favicon.png" alt="Dart" title="Dart" width="16" height="16">
+          </a>
+        </span>
+        &bull;
+        <span class="copyright no-break">
+          <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+        </span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- Do not remove placeholder -->
+<!-- Footer Placeholder -->
+
+</body>
+
+</html>

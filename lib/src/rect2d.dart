@@ -1,5 +1,6 @@
 import 'package:physics2d/physics2d.dart';
 
+/// A basic 2d rectangle implementation.
 class Rect2D extends Vector2D {
 
   num w;
